@@ -276,6 +276,7 @@ while true; do
     echo
     echo "2) Generate Specs"
     echo
+    echo
     echo "4) Clear Musics Folder"
     echo
     echo
