@@ -309,7 +309,7 @@ while true; do
             run_setup
             ;;
 
-        0)
+        0|"")
             clear
             exit 0
             ;;
