@@ -32,6 +32,24 @@ if ! pkg update -y; then
 fi
 
 echo
+if [ ! -d ~/storage/shared ]; then
+    echo
+    echo "Setting up storage..."
+    echo "If Android asks for permission, please allow it."
+    echo
+
+    if command -v termux-setup-storage >/dev/null 2>&1; then
+        termux-setup-storage
+    else
+        echo
+        echo "Warning: termux-setup-storage command was not found."
+        echo "Storage access may not be configured correctly."
+    fi
+else
+    echo
+    echo "Storage is already configured."
+fi
+
 echo "Installing FFmpeg..."
 echo
 

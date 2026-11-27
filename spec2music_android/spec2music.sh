@@ -7,7 +7,7 @@ APP_DIR="$(pwd -P)"
 MUSICS_DIR="$APP_DIR/musics"
 SPECS_DIR="$MUSICS_DIR/specs"
 
-mkdir -p "$SPECS_DIR" || exit 1
+mkdir -p "$SPECS_DIR"
 
 pause_screen() {
     echo
